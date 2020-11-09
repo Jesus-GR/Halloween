@@ -1,0 +1,140 @@
+/*Hoja de estilo de la resentación de halloween*/
+
+@font-face {                                    /*Se utiliza cuando descargamos fuentes, como por ejemplo 1001fonts*/
+    font-family: Halloween1;
+    src: url(tipografia/ShallowGraveBB.ttf);
+}
+@font-face {
+    font-family:Advertencia ;
+    src: url(tipografia/MYBLS___.TTF);
+}
+@font-face {
+    font-family: nightmare;
+    src: url(tipografia/Nemo\ Nightmares.ttf);
+}
+#contenedor{ position:relative; /*El contenedor relativo*/
+        background-image: url('../imagenes/Fondo.jpg');
+        /* El ../ hace que a buscar la url a la careta imagen  de ahí baje buscando*/
+        width: 1400px;  /*El mismo ancho de la imagen en pixeles. No es responsive si usamos px*/
+        height: 900px;   /*Altura de la imagen*/
+        margin-left: 5%;}
+body{background-color: black;}
+#texto1 {position:absolute;
+        color: red;          /*El contenido, absolut. La utilizamos para posicionar el elemento por la pantalla con top-lef...*/
+    top:10px;
+    left: 50px;
+    font-family: nightmare;  /*Esta es la fuente que nos hemos descargado y puesto la url arriba*/
+    font-size: 4em;
+    text-shadow: 1px 10px 1px  rgb(89, 8, 109);
+        background-color: rgb(244,100,3);
+        border-radius: 20%;
+}
+#texto2{position: absolute;
+top:410px;
+left: 610px;
+font-family: Advertencia;
+text-shadow: 1px 5px 1px red;
+font-size: 3em;
+}
+#texto3{position: absolute;
+        top:250px;
+        left: 950px;
+        font-family: Advertencia;
+        text-shadow: 1px 5px 1px red;
+        font-size: 3em;
+
+}
+#witch{position: absolute;
+        top:460px;
+        left:510px;
+        visibility: hidden;} /*Atributo para esa imagen. La esconde*/
+#ventana{ position: absolute;
+        top:440px;
+        left:500px;
+        width:100px;
+        height: 100px;
+        cursor: pointer; /*El puntero cambia de forma cuando pasa por encima el recuadro seleccionado com "ventana"*/
+}
+
+
+#skull{position:absolute;
+        right: 5px;
+        width: 1440px;
+        height: 900px;
+        visibility: hidden;
+}
+#puerta{position: absolute;
+        top:630px;
+        left:215px;
+        width:100px;
+        height:160px;}
+#flecha{ position:absolute;
+        top:650px;
+        left:0px;}
+#peligro{ position: absolute;
+        top:680px;
+        left:23px;
+        color: red;
+        font-family: Halloween1;
+        font-size: 2em;
+}
+#ghost{position: absolute;
+        top:250px;
+        left:320px;
+        visibility: hidden;}
+#fantasma{position: absolute;
+        top:250px;
+        left:420px;
+        font-family: Advertencia;
+        text-shadow: 1px 5px 1px red;
+        font-size: 1.8em;
+        color: rgb(7, 4, 10);
+        font-family: Halloween1;
+        font-weight: bold;}
+#ventana2{position: absolute;
+top:    250px;
+left: 320px;
+width: 100px;
+height: 100px;
+        /* border: sold 5px white;*/
+}
+#calabaza{position: absolute;
+        top:700px;
+        left:940px;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        /*border: solid 5px white;*/}
+
+#jack{position: absolute;
+        right: 5px;
+        width: 1440px;
+        height: 900px;
+        visibility: hidden;
+        cursor: crosshair;}
+#tim{position: absolute;
+        top:700px;
+        left:500px;
+        font-family: Advertencia;
+        text-shadow: 1px 5px 1px red;
+        font-size: 3em;
+        color: rgb(7, 4, 10);}
+#columpio{position: absolute;
+        top: 220px;
+        right: 10px;
+}
+
+#arbol{position: absolute;
+        top: 290px;
+        right: 20px;
+        width: 220px;
+        height: 200px;
+        cursor: pointer;
+        /*border: solid white 1px;*/
+}
+#terror{position: absolute;
+        visibility: hidden;
+        top: 0px;
+        left:0px;
+        width: 100vw;
+        height: 1080px;}

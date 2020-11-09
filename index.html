@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorífica fiesta de Halloween</title>
+    <link rel="stylesheet" href="estilos/halloween.css">
+    <!--El estilo se one con un link-->
+    <script src="javasscript/halloween.js">      /*Fuera de Style, ponemos scrip para hacer funciones con JavaScript*/
+    /*Las funciones de javaScript están fuera y las enlazo con un link*/
+    </script>
+</head>
+<body onload="sonar('nana')"> <!--Para incluir sonido de fondo en la pagina. El elemento que hce sona la nana es caragr la página. Sonar es una función de JavaScript-->
+    <div id="contenedor"> <!--Layout. Englobar el contenido en este contenedor-->
+        <audio src="sonido/lullaby.mp3" id="nana" controls> </audio>
+
+        <audio src="sonido/grito.mp3" id="grito"> </audio>
+        <audio src="sonido/010707503_prev.mp3" id="bruja"></audio>
+        <audio src="sonido/fantasma.mp3" id="gsound"></audio>
+        <audio src="sonido/RISA DE JACK SKELETON Y LADRIDOS DE ZERO (mp3cut.net).mp3" id="risaj"></audio>
+
+        
+
+        <h1 id="texto1">Terrorífica fiesta de Halloween</h1>
+        <h1 id="texto2">¡¡No te acerques<br> a la ventana!!</h1>
+        <h1 id="texto3">No toques <br>al esquleto</h1>
+        <div id="tim">Si te gusta Tim Burton,<br> pincha en la calabaza</div>
+        <img id="witch" src="imagenes/bruja.gif"width="70">
+        
+        <img id="ghost" src="imagenes/frankestei.gif" width="70">
+        <div id="fantasma">Creo que se <br> ve algo por<br> la ventana</div>
+        <div id="ventana" onmouseover="mostrar('witch');sonar('bruja')" onmouseout="ocultar('witch');parar('bruja')"></div>
+        <div id="puerta" onmouseover="mostrar('skull');sonar('grito')" onmouseout="ocultar('skull');parar('grito')"></div>
+        <div id="calabaza" onclick="mostrar('jack');sonar('risaj')" onclick="parar('risaj')"></div>
+        <img id="flecha" src="imagenes/flecha.gif"width="200"> <!--Creamo un id únco para la imagen y con src ponermos el la ubicación del archivo. Width es para poner el ancho, la altura se pone automática--> 
+        <h1 id="peligro">No entrar</h1>
+        <div id="ventana2" onmouseover="mostrar('ghost');sonar('gsound')" onmouseout="ocultar('ghost');parar('gsound')"></div>
+        <img id="columpio" src="imagenes/columpio halloween_000.gif" width="300">
+        
+        <img id="skull" src="imagenes/skull.gif" width="1300">
+        <img id="jack"  src="imagenes/jack.gif" width="100%" onclick="ocultar('jack');parar('risaj')">
+        <img id="terror" src="imagenes/terror.gif" width="1440" onclick="ocultar('terror');parar('grito')">
+        <div id="arbol" onclick="mostrar('terror');sonar('grito')" onclick="parar('grito')"></div>
+        
+
+</body>
+</html>
